@@ -1,0 +1,72 @@
+<template>
+    <h1>
+<!--
+      <div class="panel panel-danger">Todo</div>
+       <div class="panel panel-default marginTop lightblue"></div>-->
+
+       
+  <div class="panel panel-default marginTop">
+    <div class="panel panel-default marginTop lightpink">
+      <div class="panel-body">
+        <div class="col-lg-6">
+          <h1>Rubina's Todoproject</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Todo
+  </div>
+  </div>
+</div>-->
+<!--
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>-->
+
+<div class="col-lg-1 input-group marginTop marginBottom">
+            <span show.bind="!showLogon" click.trigger="showRegister()" 		class=" glyphicon glyphicon-arrow-left leftMargin">
+	 </span>
+</div>
+
+
+
+
+ <!--<div class='container'>
+    <div class="panel panel-default topMargin">
+      <div class="panel-body">
+        <div class="col-lg-2">
+          <h1>${message}</h1>
+        </div>
+        <div class="col-lg-3 pull-right">
+          <img src="http://localhost:9000/src/resources/img/chirpLogo.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>-->
+    </h1>
+
+     <div style="margin-top:10px;">
+      <compose show.bind="showLogon" view="./components/logon.html"></compose>
+      <compose show.bind="!showLogon" view="./components/register.html"></compose>
+ </div>
+
+<!--creating extra login button??-->
+<!--<button click.trigger="login()">Login</button>-->
+
+</template>
